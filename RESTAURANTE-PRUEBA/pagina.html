@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Galpón</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">
+      <img src="galpon.jpg" alt="El Galpón">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="btn-carrito">Carrito</a>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div>
+      <h1>Bienvenidos a El Galpón</h1>
+      <p>El mejor sabor a la brasa para compartir en familia</p>
+      <a href="#" class="boton">Pedir delivery</a>
+    </div>
+  </section>
+
+  <!-- ===== TABS ===== -->
+  <section id="botones">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="mostrarTab(event,'comidas')">🍽 Comidas</button>
+      <button class="tab-btn" onclick="mostrarTab(event,'bebidas')">🥤 Bebidas</button>
+    </div>
+  </section>
+
+  <!-- ===== MENÚ ===== -->
+  <section id="menu">
+    <h2>Nuestro Menú</h2>
+
+    <!-- COMIDAS -->
+    <div id="comidas" class="tab-content active">
+      <div class="menu-container">
+
+        <div class="plato">
+          <img src="chaufa.jpg" alt="Chaufa">
+          <h3>Chaufa</h3>
+          <span>S/12</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="saltado.jpg" alt="Saltado">
+          <h3>Saltado</h3>
+          <span>S/13</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="Combinado.jpg" alt="Combinado">
+          <h3>Combinado</h3>
+          <p>Chaufa + tallarín saltado</p>
+          <span>S/13</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="parrilla.jpg" alt="Parrilla Mixta">
+          <h3>Parrilla Mixta</h3>
+          <p>Carne, pollo y chorizo a la parrilla</p>
+          <span>S/45</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="pollo-a-la-plancha.jpg" alt="Pollo a la plancha">
+          <h3>Pollo a la plancha</h3>
+          <p>Papas fritas + ensalada fresca</p>
+          <span>S/26</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="Pollo a la brasa.jpg" alt="1/4 Pollo">
+          <h3>1/4 Pollo</h3>
+          <p>Papas fritas + ensalada fresca</p>
+          <span>S/34</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="Tallarín saltado.jpg" alt="Tallarín saltado">
+          <h3>Tallarín saltado</h3>
+          <span>S/20</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BEBIDAS -->
+    <div id="bebidas" class="tab-content">
+      <div class="menu-container">
+
+        <div class="plato">
+          <img src="inka.jpg" alt="Inca Kola">
+          <h3>Inca Kola Personal</h3>
+          <span>S/4</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="coca-cola.jpg" alt="Coca Cola">
+          <h3>Coca Cola Personal</h3>
+          <span>S/4</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="chicha morada.jpg" alt="Chicha Morada">
+          <h3>Chicha Morada</h3>
+          <span>S/6</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+        <div class="plato">
+          <img src="maracuya.jpg" alt="Maracuyá">
+          <h3>Maracuyá</h3>
+          <span>S/6</span>
+          <a href="#" class="btn-card">Pedir</a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section id="nosotros" class="nosotros">
+    <h2>Sobre Nosotros</h2>
+
+    <div class="nosotros-container">
+      <img src="local.jpg" alt="Local">
+      <p>
+        El Galpón fue fundado el 13 de diciembre del año 2011.
+        Nacimos en Los Olivos y hoy atendemos en Puente Piedra,
+        llevando tradición, sabor y calidad a cada mesa.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contacto-container">
+      <div class="contacto-item">📍 Fundición, Perú</div>
+      <div class="contacto-item">📞 991274874</div>
+      <div class="contacto-item">🚚 Delivery: 923452563</div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2011 El Galpón — Todos los derechos reservados</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    function mostrarTab(e, id){
+      document.querySelectorAll('.tab-content')
+        .forEach(tab => tab.classList.remove('active'));
+
+      document.querySelectorAll('.tab-btn')
+        .forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(id).classList.add('active');
+      e.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
